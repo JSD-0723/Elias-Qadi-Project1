@@ -1,0 +1,122 @@
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+}
+
+/*  General styling */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*  Header */
+
+.site-title {
+  color: var(--brand-primary);
+}
+
+.navbar-buttons {
+  display: flex;
+}
+
+.navbar-buttons button {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border-color: #dddddd;
+  border-style: solid;
+  padding: 5px 10px;
+  background-color: transparent;
+}
+
+.navbar-buttons button:first-child {
+  margin-right: 5px;
+}
+
+.navbar-buttons button ion-icon {
+  margin-right: 5px;
+}
+@media screen and (max-width: 767px) {
+  .navbar-buttons button span {
+    display: none;
+  }
+
+  .navbar-buttons button ion-icon {
+    margin-right: 0;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background-color: #ffffff;
+}
+
+/*  Header Ending */
+
+/* Welcome section */
+
+.welcome-description {
+  margin: 0px;
+  padding: 0px;
+}
+
+.welcome-title {
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+  color: #03c180;
+}
+
+.welcome-content {
+  width: 100%; /* Adjust the width as needed */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.colorful-bar {
+  height: 25px;
+  position: relative;
+  background-color: var(--bg-default);
+}
+
+.left-bar {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+  background-size: 100% 100%;
+  clip-path: polygon(0% 0%, 0% 100%, 120% 0%);
+  z-index: 1;
+}
+
+.right-bar {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: var(--brand-secondary);
+  clip-path: polygon(100% 0%, 100% 100%, -20% 0%);
+}
+
+/* Welcome section ending */
+
+/*  Footer */
+
+footer {
+  text-align: center;
+}
+/*  Footer Ending  */
