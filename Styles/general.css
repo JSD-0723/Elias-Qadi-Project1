@@ -8,25 +8,15 @@
   --heart-color: #dc143c;
 }
 
-/* --brand-primary	#0768AC
- 	--brand-secondary	#03C180
- 	--bg_default	#FFFFFF
- 	--bg_body	#F0F9FF
- 	--lines-color	#DDDDDD
- 	--body-text	#333333
- 	--heart-color	#DC143C
-   */
+/* General styling */
 
-/*  General styling */
-
-body {
+body,
+html,
+.container {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
-}
-.container {
-  margin-left: 1em;
   width: 100%;
 }
 
@@ -35,7 +25,7 @@ body {
   justify-content: center;
 }
 
-/*  Header */
+/* Header */
 
 .site-title {
   color: var(--brand-primary);
@@ -63,6 +53,7 @@ body {
 .navbar-buttons button ion-icon {
   margin-right: 5px;
 }
+
 @media screen and (max-width: 767px) {
   .navbar-buttons button span {
     display: none;
@@ -81,12 +72,21 @@ nav {
   background-color: #ffffff;
 }
 
-/*  Header Ending */
-/*  colorful bar */
-.left-bar {
+/* Colorful bar */
+.colorful-bar {
+  height: 28px;
+  position: relative;
+  background-color: var(--bg-default);
+}
+
+.left-bar,
+.right-bar {
   height: 100%;
   position: absolute;
   width: 100%;
+}
+
+.left-bar {
   background: linear-gradient(
     to right,
     var(--brand-primary),
@@ -98,55 +98,46 @@ nav {
 }
 
 .right-bar {
-  height: 100%;
-  position: absolute;
-  width: 100%;
   background-color: var(--brand-secondary);
   clip-path: polygon(100% 0%, 100% 100%, -20% 0%);
 }
-/*  colorful bar */
-/* Welcome section */
 
+/* Colorful bar Ending */
+
+/* Welcome section */
 .welcome-content {
-  width: 100%; /* Adjust the width as needed */
+  width: 100%;
   margin: 0 auto;
   text-align: start;
   margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .welcome-title {
   font-weight: 700;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   color: #03c180;
 }
+
 .welcome-description {
   font-weight: 400;
-  margin: 0px;
-  padding: 0px;
-  color: 333333;
-}
-
-.colorful-bar {
-  height: 28px;
-  position: relative;
-  background-color: var(--bg-default);
+  margin: 0;
+  padding: 0;
+  color: #333333;
 }
 
 @media only screen and (min-width: 676px) {
   .colorful-bar {
     height: 65px;
   }
+
   .welcome-content {
     margin-top: -1em;
     text-align: start;
+    margin-left: 35%;
   }
-  .welcome-title {
-    margin-left: 40%;
-  }
-  .welcome-description {
-    margin-left: 40%;
-  }
+
   .left-bar {
     clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
   }
@@ -155,19 +146,18 @@ nav {
     clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
   }
 }
-/* Welcome section ending */
-
-/* main  */
-
+/* Welcome section Ending */
+/* Main */
 .main {
   background-color: #f0f9ff;
   height: 500px;
   width: 100%;
 }
 
-/*  Footer */
+/* Main Ending */
 
+/* Footer */
 footer {
   text-align: center;
 }
-/*  Footer Ending  */
+/* Footer Ending */
