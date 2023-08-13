@@ -65,8 +65,9 @@ html,
 }
 
 nav {
-  margin: 1em;
   display: flex;
+  margin-left: 1em;
+  margin-right: 1em;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
@@ -152,6 +153,7 @@ nav {
   background-color: #f0f9ff;
   height: 500px;
   width: 100%;
+  padding: 1em;
 }
 
 /* Main Ending */
