@@ -7,16 +7,23 @@
   --body-text: #333333;
   --heart-color: #dc143c;
 }
+p {
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 /* General styling */
-
-body,
 html,
+body,
 .container {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -66,13 +73,14 @@ html,
 
 nav {
   display: flex;
-  margin-left: 1em;
-  margin-right: 1em;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+  margin: 1em;
 }
-
+.background-color {
+  background-color: var(--bg_body);
+}
 /* Colorful bar */
 .colorful-bar {
   height: 28px;
@@ -107,7 +115,7 @@ nav {
 
 /* Welcome section */
 .welcome-content {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   text-align: start;
   margin-bottom: 1em;
@@ -128,9 +136,39 @@ nav {
   color: #333333;
 }
 
+@media (min-width: 280px) {
+  .colorful-bar {
+    height: 30px;
+  }
+
+  .welcome-content {
+    text-align: start;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    width: 90%;
+  }
+  nav {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .left-bar {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  }
+
+  .right-bar {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+  }
+}
+
 @media only screen and (min-width: 676px) {
   .colorful-bar {
-    height: 65px;
+    height: 60px;
   }
 
   .welcome-content {
@@ -147,16 +185,46 @@ nav {
     clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
   }
 }
+
 /* Welcome section Ending */
 /* Main */
 .main {
-  background-color: #f0f9ff;
-  height: 500px;
+  background-color: var(--bg_body);
+  height: 100%;
   width: 100%;
   padding: 1em;
 }
 
 /* Main Ending */
+.banner-image {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 10rem;
+}
+
+.card {
+  box-shadow: 0px 2px 8px 0px grey;
+
+  border-radius: 1rem;
+}
+
+.wrapper-grid {
+  margin-top: 1em;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+
+  grid-gap: 1rem;
+}
+.card {
+  width: 200px;
+  height: 100%;
+}
+
+.card-title {
+  padding: 1em;
+}
 
 /* Footer */
 footer {
