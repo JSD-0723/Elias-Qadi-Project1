@@ -14,8 +14,7 @@
 }
 
 /* General styling */
-html,
-body,
+
 .container {
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
@@ -117,6 +116,7 @@ nav {
 /* Welcome section */
 .welcome-content {
   display: block;
+  width: 50%;
   margin: 0 auto;
   text-align: start;
   margin-bottom: 1em;
