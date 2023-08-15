@@ -1,21 +1,13 @@
-:root {
-  --brand-primary: #0768ac;
-  --brand-secondary: #03c180;
-  --bg_default: #ffffff;
-  --bg_body: #f0f9ff;
-  --lines-color: #dddddd;
-  --body-text: #333333;
-  --heart-color: #dc143c;
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .container {
-  font-family: "Nunito Sans", sans-serif;
+
   width: 100%;
 }
 
@@ -38,6 +30,9 @@
 .navbar-buttons {
   display: flex;
 }
+nav h1 {
+  font-weight: 400;
+}
 
 .navbar-buttons button {
   display: flex;
@@ -54,7 +49,7 @@
   margin-right: 1em;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 676px) {
   .navbar-buttons button span {
     display: none;
   }
@@ -147,6 +142,7 @@ nav {
 
   nav {
     padding: 1em;
+    margin-bottom: 0;
   }
 
   .left-bar {
@@ -190,7 +186,7 @@ nav {
   border-top-right-radius: 5px;
   width: 100%;
   height: 10rem;
-  object-fit: cover;
+  object-position: center;
 }
 
 .wrapper-grid {
@@ -275,7 +271,10 @@ nav {
   }
 
   nav {
-    padding: 3em;
+    padding-left: 3em;
+    padding-right:3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
   }
 }
 
