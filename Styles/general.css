@@ -116,7 +116,7 @@ nav {
 
 /* Welcome section */
 .welcome-content {
-  width: 90%;
+  display: block;
   margin: 0 auto;
   text-align: start;
   margin-bottom: 1em;
@@ -124,7 +124,9 @@ nav {
 }
 
 .welcome-title {
+  display: block;
   font-weight: 700;
+  width: 60%;
   margin: 0;
   padding: 0;
   color: #03c180;
@@ -132,6 +134,7 @@ nav {
 
 .welcome-description {
   font-weight: 400;
+  width: 60%;
   margin: 0;
   padding: 0;
 
@@ -168,7 +171,7 @@ nav {
   }
 }
 
-@media only screen and (min-width: 676px) {
+@media only screen and (min-width: 400px) {
   .colorful-bar {
     height: 60px;
   }
@@ -212,16 +215,17 @@ nav {
 }
 
 .wrapper-grid {
+  margin: 0 auto;
   margin-top: 1em;
-  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 15rem);
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 16em));
+  justify-content: center;
 
-  grid-gap: 1rem;
+  grid-gap: 1em;
 }
 .card {
-  width: 200px;
-  height: 100%;
+  width: 240px;
+  height: 300px;
 }
 
 .card-title {
