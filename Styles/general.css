@@ -61,7 +61,7 @@ header {
   margin-right: 1em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 700px) {
   .navbar-buttons button span {
     display: none;
   }
@@ -177,7 +177,7 @@ nav {
   }
 
   .welcome-content {
-    margin-top: -1em;
+    margin-top: -0.4em;
     text-align: start;
     margin-left: 35%;
   }
@@ -224,7 +224,8 @@ nav {
   grid-gap: 1em;
 }
 .card {
-  width: 240px;
+  width: 100%;
+
   height: 300px;
 }
 
