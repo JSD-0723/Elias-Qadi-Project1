@@ -207,6 +207,10 @@ nav {
   
 }
 
+.card p {
+  font-size: 15px;
+}
+
 .card-details{
   padding: 1em;
  
@@ -241,7 +245,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1249px) {
+@media screen and (min-width: 676px) and (max-width: 1249px) {
   .card {
     width: 100%;
   }
@@ -280,8 +284,20 @@ nav {
   }
 }
 
+
+
 footer {
-  text-align: center;
+  background-color: var(--bg_body);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.footer-icon {
+  
+  color: var(--heart-color);
+  font-size: 21px;
 }
 
 /*
