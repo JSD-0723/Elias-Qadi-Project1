@@ -21,15 +21,15 @@
   justify-content: center;
 }
 
-.site-title {
-  color: var(--brand-primary);
-}
-
 .navbar-buttons {
   display: flex;
 }
 nav h1 {
   font-weight: 400;
+}
+nav h1 {
+  color: var(--brand-primary);
+  font-size: 17px;
 }
 
 .navbar-buttons button {
@@ -123,8 +123,8 @@ nav {
 }
 
 .welcome-description {
-  font-weight: 400;
   color: var(--body-text);
+  font-size: 15px;
 }
 
 @media (min-width: 280px) {
@@ -218,10 +218,13 @@ nav {
   margin-bottom: 1em;
 }
 .author {
-  margin-top: 1em;
+  font-size: 12px;
+  color: grey;
 }
 
 .stars-container ion-icon {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   color: goldenrod;
 }
 
