@@ -5,15 +5,22 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+header {
+  background-color: #ffffff;
+}
+
 .container {
+  background-color: var(--bg_body);
   width: 100%;
 }
 
+.welcome-container {
+  background-color: #ffffff;
+}
+
 .search-results {
-  color: black;
   margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 1.5em;
 }
 
 .search-filter-container {
@@ -30,6 +37,9 @@ nav h1 {
 nav h1 {
   color: var(--brand-primary);
   font-size: 17px;
+}
+body {
+  background-color: #ffffff;
 }
 
 .navbar-buttons button {
@@ -64,7 +74,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+
   margin: 1em;
 }
 
@@ -176,7 +186,6 @@ nav {
 }
 
 .main {
-  background-color: var(--bg_body);
   height: 100%;
   width: 100%;
   padding: 1em;
@@ -286,8 +295,11 @@ nav {
   }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 footer {
-  background-color: var(--bg_body);
   display: flex;
   justify-content: center;
   align-items: center;
