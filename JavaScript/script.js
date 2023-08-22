@@ -7,6 +7,7 @@ darkModeButton.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {
     body.classList.remove("dark-mode");
     footer.classList.remove("dark-mode");
+
     colorfulBar.classList.remove("dark-mode");
   } else {
     body.classList.add("dark-mode");
