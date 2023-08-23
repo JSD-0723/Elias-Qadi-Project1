@@ -111,11 +111,14 @@ li ion-icon {
   border-top-left-radius: 5px;
 }
 
+.box-details-upper-2.dark {
+  background-color: red;
+}
+
 .details-stars {
   font-size: 1.5em;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  color: red;
 }
 
 .topic-text {
@@ -124,6 +127,9 @@ li ion-icon {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    background-color: var(--bg_body);
+  }
   .product-card {
     border: solid 1px;
     margin-top: 1em;
@@ -213,4 +219,18 @@ li ion-icon {
   text-align: center;
   color: grey;
   font-weight: 200;
+}
+.stars-container ion-icon {
+}
+
+.hidden {
+  display: none;
+}
+
+.main2 {
+  background-color: black;
+}
+
+.box-details-upper-2.dark {
+  font-size: 500px;
 }
