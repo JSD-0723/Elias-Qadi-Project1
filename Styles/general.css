@@ -342,7 +342,7 @@ nav {
   }
 }
 
-a {
+.wrapper-grid a {
   text-decoration: none;
   color: inherit;
 }
@@ -362,4 +362,12 @@ footer {
   .Favourites-button {
     margin-left: 5px;
   }
+}
+
+.dark-mode-icon {
+  color: black;
+}
+
+.favourites-icon {
+  color: black;
 }
