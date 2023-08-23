@@ -4,22 +4,33 @@ const footer = document.querySelector("footer");
 const colorfulBar = document.getElementById("welcomeSection");
 const outterContainer = document.getElementById("outerContainer");
 const boxDetailsUpper = document.getElementById("boxDetailsUpper");
+const boxDetailsUpper2 = document.getElementById("subTopics");
 
 darkModeButton.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {
-    body.classList.remove("dark-mode");
-    footer.classList.remove("dark-mode");
-    colorfulBar.classList.remove("dark-mode");
-    outterContainer.classList.remove("dark-mode");
-    boxDetailsUpper.classList.remove("dark-mode");
+    removeDarkModeClasses();
   } else {
-    body.classList.add("dark-mode");
-    footer.classList.add("dark-mode");
-    colorfulBar.classList.add("dark-mode");
-    outterContainer.classList.add("dark-mode");
-    boxDetailsUpper.classList.add("dark-mode");
+    addDarkModeClasses();
   }
 });
+
+const addDarkModeClasses = () => {
+  body.classList.add("dark-mode");
+  footer.classList.add("dark-mode");
+  colorfulBar.classList.add("dark-mode");
+  outterContainer.classList.add("dark-mode");
+  boxDetailsUpper.classList.add("dark-mode");
+  boxDetailsUpper2.classList.add("dark-mode");
+};
+
+const removeDarkModeClasses = () => {
+  body.classList.remove("dark-mode");
+  footer.classList.remove("dark-mode");
+  colorfulBar.classList.remove("dark-mode");
+  outterContainer.classList.remove("dark-mode");
+  boxDetailsUpper.classList.remove("dark-mode");
+  boxDetailsUpper2.classList.remove("dark-mode");
+};
 
 const favoritesButton = document.querySelector(".Favourites-button");
 const favoritesContainer = document.querySelector(".favorites-container");

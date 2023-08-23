@@ -231,6 +231,16 @@ li ion-icon {
   background-color: black;
 }
 
-.box-details-upper-2.dark {
-  font-size: 500px;
+.dark-mode .box-details-upper-2 {
+  background-color: #222;
+  color: #ededed;
+}
+
+.dark-mode .box-details-upper-2 ul li {
+  border: 1px solid black;
+}
+
+.box-details-upper-2.dark-mode h2 {
+  border: 1px solid black;
+  color: white;
 }
