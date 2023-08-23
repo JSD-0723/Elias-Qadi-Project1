@@ -23,9 +23,13 @@ header {
   font-size: 12px;
 }
 
+ion-icon {
+  color: goldenrod;
+}
+
 .product-image {
   width: 100%;
-  height: 140px;
+  height: 200px !important;
 }
 
 .box-details-upper {
@@ -51,7 +55,7 @@ header {
   width: 300px;
   position: absolute;
   left: 50%;
-  background-color: green; /* Different background color for variety */
+
   font-size: 12px;
 }
 
@@ -60,24 +64,21 @@ header {
   margin-right: 2em;
 }
 
-html,
-body {
-  height: 100%;
+.category-title {
+  color: var(--brand-secondary);
   margin: 0;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
+.product-image {
+  height: fit-content;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
-.outer-container {
-  flex: 1;
-  background-color: var(--bg_default);
-}
-
-ion-icon {
-  font-size: 1.8rem;
+  color: black;
 }
 
 li {
@@ -85,14 +86,74 @@ li {
   list-style-type: none;
   padding: 1em;
   border: 1px solid var(--lines-color);
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
+}
+
+li ion-icon {
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+  color: var(--brand-secondary);
+  font-size: 2em;
+  margin-right: 0.5em;
 }
 
 [name="checkmark-circle-outline"] {
   color: var(--brand-secondary);
-  font-size: 16px;
+  font-size: 2em;
 }
 
 .box-details-upper-2 h2 {
   border: 1px solid var(--lines-color);
   padding: 1em 1.5em;
+}
+
+.outer-container {
+  flex: 1;
+  background-color: var(--bg_body);
+}
+
+footer {
+}
+
+.details-stars {
+  font-size: 1.5em;
+}
+
+.stars-container-details ion-icon {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: goldenrod;
+}
+
+.topic-text {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .product-card {
+    border: solid 1px;
+    height: 45%;
+    width: 300px;
+    position: static;
+    background-color: blue;
+    font-size: 12px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topic-text {
+    width: 100%;
+  }
+
+  .box-details-upper {
+    width: 100%;
+  }
+
+  .details-stars {
+    font-size: 1em;
+  }
 }
